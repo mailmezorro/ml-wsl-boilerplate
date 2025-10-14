@@ -1,0 +1,22 @@
+# environment.yml
+name: ml-wsl-base
+channels:
+  - conda-forge
+dependencies:
+  # --- Core Libraries (Data Science Foundation) ---
+  - python=3.10
+  - pandas
+  - numpy
+  - scikit-learn
+  - matplotlib
+  - tqdm
+  - jupyterlab
+  - optuna
+  - xgboost
+  
+  # --- Tools (Installed via Pip) ---
+  - pip
+  - pip:
+    - pre-commit
+    - ruff
+    - pytest
