@@ -9,14 +9,31 @@ dependencies:
   - numpy
   - scikit-learn
   - matplotlib
+  - seaborn
+  - plotly
   - tqdm
   - jupyterlab
   - optuna
   - xgboost
-  
+  - lightgbm
+
+  # --- Configuration & Utilities ---
+  - omegaconf
+  - hydra-core
+  - pyyaml
+  - rich
+  - click
+
+  # --- ML Tracking & Monitoring ---
+  - mlflow
+  - tensorboard
+
   # --- Tools (Installed via Pip) ---
   - pip
   - pip:
     - pre-commit
     - ruff
     - pytest
+    - pytest-cov
+    - pytest-xdist
+    - isort
