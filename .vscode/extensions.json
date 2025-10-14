@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "ms-python.python",       
+        "ms-toolsai.jupyter",      
+        "eamodio.gitlens",         
+        "charliermarsh.ruff",
+        "ms-toolsai.datawrangler",
+        "hediet.vscode-drawio"
+    ]
+}
