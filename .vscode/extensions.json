@@ -5,6 +5,7 @@
         "eamodio.gitlens",         
         "charliermarsh.ruff",
         "ms-toolsai.datawrangler",
-        "hediet.vscode-drawio"
+        "hediet.vscode-drawio",
+        "janisdd.vscode-edit-csv"
     ]
 }
