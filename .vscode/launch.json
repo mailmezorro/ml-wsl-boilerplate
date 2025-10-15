@@ -1,0 +1,105 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/src:${env:PYTHONPATH}"
+            },
+            "justMyCode": false
+        },
+        {
+            "name": "Train Model",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/scripts/train.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/src:${env:PYTHONPATH}"
+            },
+            "args": [
+                "--model", "sklearn",
+                "--save-model"
+            ],
+            "justMyCode": false
+        },
+        {
+            "name": "Run Tests",
+            "type": "python",
+            "request": "launch",
+            "module": "pytest",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/src:${env:PYTHONPATH}"
+            },
+            "args": [
+                "-v",
+                "tests/"
+            ],
+            "justMyCode": false
+        },
+        {
+            "name": "Run Single Test File",
+            "type": "python",
+            "request": "launch",
+            "module": "pytest",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/src:${env:PYTHONPATH}"
+            },
+            "args": [
+                "-v",
+                "${file}"
+            ],
+            "justMyCode": false
+        },
+        {
+            "name": "Data Loader Debug",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/data/loader.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/src:${env:PYTHONPATH}"
+            },
+            "justMyCode": false
+        },
+        {
+            "name": "Config Test",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/utils/config.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/src:${env:PYTHONPATH}"
+            },
+            "justMyCode": false
+        },
+        {
+            "name": "Attach to Remote Debug Server",
+            "type": "python",
+            "request": "attach",
+            "connect": {
+                "host": "localhost",
+                "port": 5678
+            },
+            "pathMappings": [
+                {
+                    "localRoot": "${workspaceFolder}",
+                    "remoteRoot": "/workspace"
+                }
+            ],
+            "justMyCode": false
+        }
+    ]
+}
