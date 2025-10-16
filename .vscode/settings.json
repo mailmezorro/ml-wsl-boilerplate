@@ -15,10 +15,10 @@
     // PYTHON CONFIGURATION
     // ==========================================================================
     // Python interpreter (will be auto-detected to conda env)
-    "python.defaultInterpreterPath": "~/miniforge3/envs/ml-wsl-base/bin/python",
+    "python.defaultInterpreterPath": "",
 
     // Linting and formatting
-    "python.linting.enabled": true,
+    "python.linting.enabled": false,
     "python.linting.ruffEnabled": true,
     "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": false,
